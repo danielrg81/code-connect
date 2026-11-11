@@ -1,0 +1,25 @@
+{
+  "name": "code-connect",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo with React Vite and NestJS using pnpm workspaces",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "dev:web": "pnpm --filter web dev",
+    "build:web": "pnpm --filter web build",
+    "preview:web": "pnpm --filter web preview",
+    "lint:web": "pnpm --filter web lint",
+    "dev:api": "pnpm --filter api start:dev",
+    "build:api": "pnpm --filter api build",
+    "start:api": "pnpm --filter api start",
+    "start:prod:api": "pnpm --filter api start:prod",
+    "lint:api": "pnpm --filter api lint",
+    "test:api": "pnpm --filter api test",
+    "test:watch:api": "pnpm --filter api test:watch",
+    "test:cov:api": "pnpm --filter api test:cov",
+    "test:e2e:api": "pnpm --filter api test:e2e"
+  }
+}
